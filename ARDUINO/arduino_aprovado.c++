@@ -29,3 +29,40 @@ void loop()
   
 
 }
+
+int valx1 = 0;
+int valz1 = 0;
+
+
+
+void setup () {
+  Serial.begin(9600);
+  
+  
+  
+  
+}
+
+void loop () {
+  
+  
+  
+  Serial.println("Digite valores para x");
+   while(!Serial.available()){}
+  int valx1 = Serial.parseInt();
+  
+  
+  Serial.println("Digite valores para z");
+   while(!Serial.available()){}
+  int valz1 = Serial.parseInt();
+  
+  if (valx1 < valz1) {
+    Serial.println("Crescente");
+  }
+  else {
+      Serial.println("Decrescente");
+    }
+  }
+  
+ 	
+  
